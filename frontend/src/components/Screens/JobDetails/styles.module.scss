@@ -1,0 +1,101 @@
+@import "../../../../node_modules/bootstrap/scss/functions";
+@import "../../../../node_modules/bootstrap/scss/variables";
+@import "../../../../node_modules/bootstrap/scss/mixins";
+@import "../screenstyles.scss";
+@import "../../../colors.scss";
+
+.hintbtns {
+  float: right;
+}
+.wrap {
+  overflow: hidden;
+  position: relative;
+
+  .bg {
+    opacity: 0.1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+  }
+  p {
+    font-weight: 600;
+    font-size: 19px;
+    letter-spacing: 0.25px;
+    font-style: oblique;
+    color: $primary-color;
+  }
+  li {
+    background-color: transparent !important;
+  }
+}
+
+.bold {
+  font-weight: bold;
+}
+
+
+
+.savedModelScreen {
+  overflow-y: auto;
+}
+
+.tablecontainer {
+  overflow-x: auto;
+  overflow-y: auto;
+  max-height: 52vh;
+  margin-bottom: 1rem;
+
+  th {
+    color: white;
+    font-weight: normal;
+  }
+
+  td {
+    // text-align: center;
+    max-width: 25vw;
+  }
+}
+
+.modelName {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.modelState {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.modelCreationDate {
+  font-size: 0.8rem;
+  margin-bottom: 0;
+  font-style: italic;
+  color: #888;
+}
+.modelCard {
+  padding-bottom: 0.3rem;
+}
+.models {
+  margin-top: 1rem;
+}
+
+.genModelCard {
+  margin: 1rem 0;
+}
+
+.genModelCardSelected {
+  border-color: $primary-color;
+  &Header {
+    background-color: $primary-color;
+    color: white;
+  }
+}
